@@ -157,7 +157,7 @@ teleporting = false
 player.OnTeleport:Connect(function(state)
 	if not teleporting and queue_on_teleport then
 		teleporting = true
-		queue_on_teleport("loadstring(game:HttpGet(''))()")
+		queue_on_teleport("loadstring(game:HttpGet('https://raw.githubusercontent.com/safewarden/circle_incremental/main/script.lua'))()")
 	end
 end)
 
